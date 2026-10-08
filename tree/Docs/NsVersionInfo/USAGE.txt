@@ -1,0 +1,39 @@
+Usage
+-----
+
+Basically, you can get acces to the file VersionInfo resource by
+instantiating a CVersionInfo. You then then load the module that you want to process with CVersionInfo::FromFile() or you can also passing to its constructor the filepath to load.
+
+Methods of CVersionInfo
+-----------------------
+
+GetLibVersion() : returns the version of the lib
+
+FromFile() : Read version information from module
+
+ToFile() : Save version information to module resource
+           (specify strModulePath, lpszResourceId & wLangId to copy
+           resource to different module, resource, language)
+
+Save() : Quick save (saves to the same module, resource, and language
+         that it was loaded from)
+
+Reset() : Resets (removes all string tables and cleans fixed version info)
+
+IsValid() : Sanity check against the resource signature
+
+GetInfoBlockOrder() / SetInfoBlockOrder : Get/Set the order of blocks
+            (Regular (TRUE) = StringFileInfo first, VarFileInfo 2nd)
+
+GetStringFileInfo() : Get reference to CStringFileInfo (a handler for the version strings)
+
+operator[] : Overloaded bracket operators allow quick access to first
+             string table in StringFileInfo r/w
+
+GetFixedFileInfo() : Get reference to VS_FIXEDFILEINFO (a structure for the numeric version data)
+
+SetFileVersion() : Updates file version in VS_FIXEDFILEINFO
+                   and in stringtables when bUpdateStringTables == TRUE
+
+SetProductVersion() : Updates product version in VS_FIXEDFILEINFO
+                      and ALL stringtables when bUpdateStringTables == TRUE

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NSISDirEx", "NSISDirEx.vcproj", "{473C8FED-E11B-4221-90D9-325AA66AB09E}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {C6580C0A-3C26-432B-9F68-F2C2D88C56D2}
+		SccProjectUniqueName1 = NSISDirEx.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{473C8FED-E11B-4221-90D9-325AA66AB09E}.Debug.ActiveCfg = Debug|Win32
+		{473C8FED-E11B-4221-90D9-325AA66AB09E}.Debug.Build.0 = Debug|Win32
+		{473C8FED-E11B-4221-90D9-325AA66AB09E}.Release.ActiveCfg = Release|Win32
+		{473C8FED-E11B-4221-90D9-325AA66AB09E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

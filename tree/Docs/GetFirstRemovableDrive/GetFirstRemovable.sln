@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GetFirstRemovable", "GetFirstRemovable.vcproj", "{BDCA6B51-B418-4459-978F-7774EEFE2D23}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BDCA6B51-B418-4459-978F-7774EEFE2D23}.Debug.ActiveCfg = Debug|Win32
+		{BDCA6B51-B418-4459-978F-7774EEFE2D23}.Debug.Build.0 = Debug|Win32
+		{BDCA6B51-B418-4459-978F-7774EEFE2D23}.Release.ActiveCfg = Release|Win32
+		{BDCA6B51-B418-4459-978F-7774EEFE2D23}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

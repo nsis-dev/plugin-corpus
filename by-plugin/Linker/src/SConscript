@@ -1,0 +1,23 @@
+target = 'Linker'
+
+files = Split("""
+	Linker.c
+""")
+
+libs = Split("""
+	kernel32
+	user32
+	gdi32
+""")
+
+examples = Split("""
+	Example.nsi
+""")
+
+docs = Split("""
+	Readme.txt
+""")
+
+Import('BuildPlugin')
+
+BuildPlugin(target, files, libs, examples, docs)

@@ -1,0 +1,9 @@
+Zlib sources doesn't include this package, because that damn thing didn't 
+fit in attachment size limit. Zlib sources what this plugin uses is the same 
+as the one what comes with NSIS zip2exe sources and it's slightly modified 
+zlib 1.2.3 so you better use that one.
+
+But you can download the right Zlib sources here:
+http://forums.winamp.com/showthread.php?postid=1825648#post1825648
+
+Or you can use the one what comes with NSIS zip2exe sources.

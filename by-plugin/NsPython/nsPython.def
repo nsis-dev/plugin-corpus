@@ -1,0 +1,5 @@
+LIBRARY nsPython.dll
+EXPORTS
+eval
+exec
+execFile

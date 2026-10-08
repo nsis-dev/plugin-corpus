@@ -1,0 +1,20 @@
+History
+-------
+
+2011-11-23      - v1.0.4 Reworked the Makefile, added some debug messages
+                  Public release            
+
+2010-10-21      - Removed another assert() that was preventing for correct
+                  handling of the resources produced by WindRes
+
+2010-03-10      - v1.0.3 Bugfixed the deletion of the temporary overlay backup
+
+2009-11-20      - v1.0.2 Removed an assert() that was too picky
+
+2009-07-10      - v1.0.1 : Added CVersionInfo::GetLibVersion()
+
+2008-10-24      - v1.0 : added the support for Powerbuilder exe & dlls
+
+2008 October	- One can modify standard a standard exe or dll
+
+2008 September  - Start of the project

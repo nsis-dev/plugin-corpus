@@ -1,0 +1,8 @@
+; ExLicensePage.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ExLicensePage"
+DESCRIPTION  'ExLicensePage Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	showPage

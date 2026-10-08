@@ -1,0 +1,12 @@
+When you hit "Next >", the installer will output a few values to the log screen.
+These are:
+
+* Value of top of stack (try using the debugger to push a value on the stack)
+* The value of a copuple of register variables ($0, $1, $R0, $R1 and $OUTDIR)
+
+Then it will push two string to the stack and fill the registers $0 through $R9 with numbers incrementing from 0.
+
+Use the debugger to watch these changes and also to monitor the debug log.
+
+Remember to visit my homepage
+  http://members.tripod.com/files_saivert/

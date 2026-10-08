@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CompressFile", "CompressFile\CompressFile.vcproj", "{010BD031-BEB6-4C61-A651-63F7283BE3FD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExtractDLL", "ExtractDLL.vcproj", "{FE0EAFBE-C95A-4754-8349-EAECD0E3477F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{010BD031-BEB6-4C61-A651-63F7283BE3FD}.Release.ActiveCfg = Release|Win32
+		{010BD031-BEB6-4C61-A651-63F7283BE3FD}.Release.Build.0 = Release|Win32
+		{FE0EAFBE-C95A-4754-8349-EAECD0E3477F}.Release.ActiveCfg = Release|Win32
+		{FE0EAFBE-C95A-4754-8349-EAECD0E3477F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

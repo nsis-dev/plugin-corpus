@@ -1,0 +1,29 @@
+#include "resource.h"
+#include <winresrc.h>
+#ifdef PROG_BAR
+ #include <commctrl.h>
+#endif
+
+IDD_DLGZIP1 DIALOGEX 0,0,144,23
+FONT 8,"MS Shell Dlg"
+STYLE 0x80080808
+EXSTYLE 0x00010001
+{
+  CONTROL "",IDC_ZIPINFO,"Static",0x50020001,9,7,126,8,0x00000000
+}
+
+IDD_DLGZIP2 DIALOGEX 0,0,148,16
+FONT 8,"MS Shell Dlg"
+STYLE 0x80080808
+EXSTYLE 0x00000081
+{
+  CONTROL "",IDC_ZIPPROG,"msctls_progress32",0x50000001,4,4,140,8,0x00000000
+}
+
+IDD_POPUP MENU
+{
+  POPUP "zip_menu"
+  {
+    MENUITEM "Cancel...",IDC_CANCELZIP
+  }
+}

@@ -1,0 +1,38 @@
+# Build artifacts
+*.a        binary
+*.dll      binary
+*.exe      binary
+*.exp      binary
+*.idb      binary
+*.lib      binary
+*.ncb      binary
+*.obj      binary
+*.opt      binary
+*.pdb      binary
+*.pyd      binary
+*.res      binary
+*.sys      binary
+*.aps      binary
+*.suo      binary
+*.dcr      binary
+
+# Images
+*.bmp      binary
+*.gif      binary
+*.ico      binary
+*.jpg      binary
+*.png      binary
+
+# Documents
+*.chm      binary
+*.doc      binary
+
+# Archives
+*.7z       binary
+*.arc      binary
+*.bz2      binary
+*.cab      binary
+*.lzma     binary
+*.tgz      binary
+*.tlz      binary
+*.zip      binary

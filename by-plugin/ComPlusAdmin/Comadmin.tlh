@@ -1,0 +1,594 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (4dadf793).
+//
+// Comadmin.tlh
+//
+// C++ source equivalent of Win32 type library c:\\winnt\\system32\\com\\Comadmin.dll
+// compiler-generated file created 01/17/06 at 14:53:31 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ComAdminLib {
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ COMAdminCatalog;
+struct __declspec(uuid("dd662187-dfc2-11d1-a2cf-00805fc79235"))
+/* dual interface */ ICOMAdminCatalog;
+struct /* coclass */ COMAdminCatalogObject;
+struct __declspec(uuid("6eb22871-8a19-11d0-81b6-00a0c9231c29"))
+/* dual interface */ ICatalogObject;
+struct /* coclass */ COMAdminCatalogCollection;
+struct __declspec(uuid("6eb22872-8a19-11d0-81b6-00a0c9231c29"))
+/* dual interface */ ICatalogCollection;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICOMAdminCatalog, __uuidof(ICOMAdminCatalog));
+_COM_SMARTPTR_TYPEDEF(ICatalogObject, __uuidof(ICatalogObject));
+_COM_SMARTPTR_TYPEDEF(ICatalogCollection, __uuidof(ICatalogCollection));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("f618c514-dfb8-11d1-a2cf-00805fc79235"))
+COMAdminCatalog;
+    // [ default ] interface ICOMAdminCatalog
+
+struct __declspec(uuid("dd662187-dfc2-11d1-a2cf-00805fc79235"))
+ICOMAdminCatalog : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetMajorVersion))
+    long MajorVersion;
+    __declspec(property(get=GetMinorVersion))
+    long MinorVersion;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetCollection (
+        _bstr_t bstrCollName );
+    IDispatchPtr Connect (
+        _bstr_t bstrConnectString );
+    long GetMajorVersion ( );
+    long GetMinorVersion ( );
+    IDispatchPtr GetCollectionByQuery (
+        _bstr_t bstrCollName,
+        SAFEARRAY * * aQuery );
+    HRESULT ImportComponent (
+        _bstr_t bstrApplIdOrName,
+        _bstr_t bstrCLSIDOrProgId );
+    HRESULT InstallComponent (
+        _bstr_t bstrApplIdOrName,
+        _bstr_t bstrDLL,
+        _bstr_t bstrTLB,
+        _bstr_t bstrPSDLL );
+    HRESULT ShutdownApplication (
+        _bstr_t bstrApplIdOrName );
+    HRESULT ExportApplication (
+        _bstr_t bstrApplIdOrName,
+        _bstr_t bstrApplicationFile,
+        long lOptions );
+    HRESULT InstallApplication (
+        _bstr_t bstrApplicationFile,
+        _bstr_t bstrDestinationDirectory,
+        long lOptions,
+        _bstr_t bstrUserId,
+        _bstr_t bstrPassword,
+        _bstr_t bstrRSN );
+    HRESULT StopRouter ( );
+    HRESULT RefreshRouter ( );
+    HRESULT StartRouter ( );
+    HRESULT Reserved1 ( );
+    HRESULT Reserved2 ( );
+    HRESULT InstallMultipleComponents (
+        _bstr_t bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS );
+    HRESULT GetMultipleComponentsInfo (
+        _bstr_t bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS,
+        SAFEARRAY * * varClassNames,
+        SAFEARRAY * * varFileFlags,
+        SAFEARRAY * * varComponentFlags );
+    HRESULT RefreshComponents ( );
+    HRESULT BackupREGDB (
+        _bstr_t bstrBackupFilePath );
+    HRESULT RestoreREGDB (
+        _bstr_t bstrBackupFilePath );
+    HRESULT QueryApplicationFile (
+        _bstr_t bstrApplicationFile,
+        BSTR * bstrApplicationName,
+        BSTR * bstrApplicationDescription,
+        VARIANT_BOOL * bHasUsers,
+        VARIANT_BOOL * bIsProxy,
+        SAFEARRAY * * varFileNames );
+    HRESULT StartApplication (
+        _bstr_t bstrApplIdOrName );
+    long ServiceCheck (
+        long lService );
+    HRESULT InstallMultipleEventClasses (
+        _bstr_t bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS );
+    HRESULT InstallEventClass (
+        _bstr_t bstrApplIdOrName,
+        _bstr_t bstrDLL,
+        _bstr_t bstrTLB,
+        _bstr_t bstrPSDLL );
+    HRESULT GetEventClassesForIID (
+        _bstr_t bstrIID,
+        SAFEARRAY * * varCLSIDS,
+        SAFEARRAY * * varProgIDs,
+        SAFEARRAY * * varDescriptions );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetCollection (
+        BSTR bstrCollName,
+        IDispatch * * ppCatalogCollection ) = 0;
+    virtual HRESULT __stdcall raw_Connect (
+        BSTR bstrConnectString,
+        IDispatch * * ppCatalogCollection ) = 0;
+    virtual HRESULT __stdcall get_MajorVersion (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall get_MinorVersion (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall raw_GetCollectionByQuery (
+        BSTR bstrCollName,
+        SAFEARRAY * * aQuery,
+        IDispatch * * ppCatalogCollection ) = 0;
+    virtual HRESULT __stdcall raw_ImportComponent (
+        BSTR bstrApplIdOrName,
+        BSTR bstrCLSIDOrProgId ) = 0;
+    virtual HRESULT __stdcall raw_InstallComponent (
+        BSTR bstrApplIdOrName,
+        BSTR bstrDLL,
+        BSTR bstrTLB,
+        BSTR bstrPSDLL ) = 0;
+    virtual HRESULT __stdcall raw_ShutdownApplication (
+        BSTR bstrApplIdOrName ) = 0;
+    virtual HRESULT __stdcall raw_ExportApplication (
+        BSTR bstrApplIdOrName,
+        BSTR bstrApplicationFile,
+        long lOptions ) = 0;
+    virtual HRESULT __stdcall raw_InstallApplication (
+        BSTR bstrApplicationFile,
+        BSTR bstrDestinationDirectory,
+        long lOptions,
+        BSTR bstrUserId,
+        BSTR bstrPassword,
+        BSTR bstrRSN ) = 0;
+    virtual HRESULT __stdcall raw_StopRouter ( ) = 0;
+    virtual HRESULT __stdcall raw_RefreshRouter ( ) = 0;
+    virtual HRESULT __stdcall raw_StartRouter ( ) = 0;
+    virtual HRESULT __stdcall raw_Reserved1 ( ) = 0;
+    virtual HRESULT __stdcall raw_Reserved2 ( ) = 0;
+    virtual HRESULT __stdcall raw_InstallMultipleComponents (
+        BSTR bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS ) = 0;
+    virtual HRESULT __stdcall raw_GetMultipleComponentsInfo (
+        BSTR bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS,
+        SAFEARRAY * * varClassNames,
+        SAFEARRAY * * varFileFlags,
+        SAFEARRAY * * varComponentFlags ) = 0;
+    virtual HRESULT __stdcall raw_RefreshComponents ( ) = 0;
+    virtual HRESULT __stdcall raw_BackupREGDB (
+        BSTR bstrBackupFilePath ) = 0;
+    virtual HRESULT __stdcall raw_RestoreREGDB (
+        BSTR bstrBackupFilePath ) = 0;
+    virtual HRESULT __stdcall raw_QueryApplicationFile (
+        BSTR bstrApplicationFile,
+        BSTR * bstrApplicationName,
+        BSTR * bstrApplicationDescription,
+        VARIANT_BOOL * bHasUsers,
+        VARIANT_BOOL * bIsProxy,
+        SAFEARRAY * * varFileNames ) = 0;
+    virtual HRESULT __stdcall raw_StartApplication (
+        BSTR bstrApplIdOrName ) = 0;
+    virtual HRESULT __stdcall raw_ServiceCheck (
+        long lService,
+        long * pulStatus ) = 0;
+    virtual HRESULT __stdcall raw_InstallMultipleEventClasses (
+        BSTR bstrApplIdOrName,
+        SAFEARRAY * * varFileNames,
+        SAFEARRAY * * varCLSIDS ) = 0;
+    virtual HRESULT __stdcall raw_InstallEventClass (
+        BSTR bstrApplIdOrName,
+        BSTR bstrDLL,
+        BSTR bstrTLB,
+        BSTR bstrPSDLL ) = 0;
+    virtual HRESULT __stdcall raw_GetEventClassesForIID (
+        BSTR bstrIID,
+        SAFEARRAY * * varCLSIDS,
+        SAFEARRAY * * varProgIDs,
+        SAFEARRAY * * varDescriptions ) = 0;
+};
+
+struct __declspec(uuid("f618c515-dfb8-11d1-a2cf-00805fc79235"))
+COMAdminCatalogObject;
+    // [ default ] interface ICatalogObject
+
+struct __declspec(uuid("6eb22871-8a19-11d0-81b6-00a0c9231c29"))
+ICatalogObject : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetValue,put=PutValue))
+    _variant_t Value[];
+    __declspec(property(get=GetKey))
+    _variant_t Key;
+    __declspec(property(get=GetName))
+    _variant_t Name;
+    __declspec(property(get=GetValid))
+    VARIANT_BOOL Valid;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetValue (
+        _bstr_t bstrPropName );
+    void PutValue (
+        _bstr_t bstrPropName,
+        const _variant_t & retval );
+    _variant_t GetKey ( );
+    _variant_t GetName ( );
+    VARIANT_BOOL IsPropertyReadOnly (
+        _bstr_t bstrPropName );
+    VARIANT_BOOL GetValid ( );
+    VARIANT_BOOL IsPropertyWriteOnly (
+        _bstr_t bstrPropName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        BSTR bstrPropName,
+        VARIANT * retval ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        BSTR bstrPropName,
+        VARIANT retval ) = 0;
+    virtual HRESULT __stdcall get_Key (
+        VARIANT * retval ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        VARIANT * retval ) = 0;
+    virtual HRESULT __stdcall raw_IsPropertyReadOnly (
+        BSTR bstrPropName,
+        VARIANT_BOOL * retval ) = 0;
+    virtual HRESULT __stdcall get_Valid (
+        VARIANT_BOOL * retval ) = 0;
+    virtual HRESULT __stdcall raw_IsPropertyWriteOnly (
+        BSTR bstrPropName,
+        VARIANT_BOOL * retval ) = 0;
+};
+
+struct __declspec(uuid("f618c516-dfb8-11d1-a2cf-00805fc79235"))
+COMAdminCatalogCollection;
+    // [ default ] interface ICatalogCollection
+
+struct __declspec(uuid("6eb22872-8a19-11d0-81b6-00a0c9231c29"))
+ICatalogCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IDispatchPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetName))
+    _variant_t Name;
+    __declspec(property(get=GetAddEnabled))
+    VARIANT_BOOL AddEnabled;
+    __declspec(property(get=GetRemoveEnabled))
+    VARIANT_BOOL RemoveEnabled;
+    __declspec(property(get=GetDataStoreMajorVersion))
+    long DataStoreMajorVersion;
+    __declspec(property(get=GetDataStoreMinorVersion))
+    long DataStoreMinorVersion;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    IDispatchPtr GetItem (
+        long lIndex );
+    long GetCount ( );
+    HRESULT Remove (
+        long lIndex );
+    IDispatchPtr Add ( );
+    HRESULT Populate ( );
+    long SaveChanges ( );
+    IDispatchPtr GetCollection (
+        _bstr_t bstrCollName,
+        const _variant_t & varObjectKey );
+    _variant_t GetName ( );
+    VARIANT_BOOL GetAddEnabled ( );
+    VARIANT_BOOL GetRemoveEnabled ( );
+    IDispatchPtr GetUtilInterface ( );
+    long GetDataStoreMajorVersion ( );
+    long GetDataStoreMinorVersion ( );
+    HRESULT PopulateByKey (
+        SAFEARRAY * aKeys );
+    HRESULT PopulateByQuery (
+        _bstr_t bstrQueryString,
+        long lQueryType );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * ppEnumVariant ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        long lIndex,
+        IDispatch * * ppCatalogObject ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall raw_Remove (
+        long lIndex ) = 0;
+    virtual HRESULT __stdcall raw_Add (
+        IDispatch * * ppCatalogObject ) = 0;
+    virtual HRESULT __stdcall raw_Populate ( ) = 0;
+    virtual HRESULT __stdcall raw_SaveChanges (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall raw_GetCollection (
+        BSTR bstrCollName,
+        VARIANT varObjectKey,
+        IDispatch * * ppCatalogCollection ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        VARIANT * retval ) = 0;
+    virtual HRESULT __stdcall get_AddEnabled (
+        VARIANT_BOOL * retval ) = 0;
+    virtual HRESULT __stdcall get_RemoveEnabled (
+        VARIANT_BOOL * retval ) = 0;
+    virtual HRESULT __stdcall raw_GetUtilInterface (
+        IDispatch * * ppUtil ) = 0;
+    virtual HRESULT __stdcall get_DataStoreMajorVersion (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall get_DataStoreMinorVersion (
+        long * retval ) = 0;
+    virtual HRESULT __stdcall raw_PopulateByKey (
+        SAFEARRAY * aKeys ) = 0;
+    virtual HRESULT __stdcall raw_PopulateByQuery (
+        BSTR bstrQueryString,
+        long lQueryType ) = 0;
+};
+
+enum COMAdminApplicationInstallOptions
+{
+    COMAdminInstallNoUsers = 0,
+    COMAdminInstallUsers = 1,
+    COMAdminInstallForceOverwriteOfFiles = 2
+};
+
+enum COMAdminApplicationExportOptions
+{
+    COMAdminExportNoUsers = 0,
+    COMAdminExportUsers = 1,
+    COMAdminExportApplicationProxy = 2,
+    COMAdminExportForceOverwriteOfFiles = 4
+};
+
+enum COMAdminThreadingModels
+{
+    COMAdminThreadingModelApartment = 0,
+    COMAdminThreadingModelFree = 1,
+    COMAdminThreadingModelMain = 2,
+    COMAdminThreadingModelBoth = 3,
+    COMAdminThreadingModelNeutral = 4,
+    COMAdminThreadingModelNotSpecified = 5
+};
+
+enum COMAdminTransactionOptions
+{
+    COMAdminTransactionIgnored = 0,
+    COMAdminTransactionNone = 1,
+    COMAdminTransactionSupported = 2,
+    COMAdminTransactionRequired = 3,
+    COMAdminTransactionRequiresNew = 4
+};
+
+enum COMAdminSynchronizationOptions
+{
+    COMAdminSynchronizationIgnored = 0,
+    COMAdminSynchronizationNone = 1,
+    COMAdminSynchronizationSupported = 2,
+    COMAdminSynchronizationRequired = 3,
+    COMAdminSynchronizationRequiresNew = 4
+};
+
+enum COMAdminActivationOptions
+{
+    COMAdminActivationInproc = 0,
+    COMAdminActivationLocal = 1
+};
+
+enum COMAdminAccessChecksLevelOptions
+{
+    COMAdminAccessChecksApplicationLevel = 0,
+    COMAdminAccessChecksApplicationComponentLevel = 1
+};
+
+enum COMAdminAuthenticationLevelOptions
+{
+    COMAdminAuthenticationDefault = 0,
+    COMAdminAuthenticationNone = 1,
+    COMAdminAuthenticationConnect = 2,
+    COMAdminAuthenticationCall = 3,
+    COMAdminAuthenticationPacket = 4,
+    COMAdminAuthenticationIntegrity = 5,
+    COMAdminAuthenticationPrivacy = 6
+};
+
+enum COMAdminImpersonationLevelOptions
+{
+    COMAdminImpersonationAnonymous = 1,
+    COMAdminImpersonationIdentify = 2,
+    COMAdminImpersonationImpersonate = 3,
+    COMAdminImpersonationDelegate = 4
+};
+
+enum COMAdminAuthenticationCapabilitiesOptions
+{
+    COMAdminAuthenticationCapabilitiesNone = 0,
+    COMAdminAuthenticationCapabilitiesStaticCloaking = 32,
+    COMAdminAuthenticationCapabilitiesDynamicCloaking = 64,
+    COMAdminAuthenticationCapabilitiesSecureReference = 2
+};
+
+enum COMAdminOS
+{
+    COMAdminOSWindows3_1 = 1,
+    COMAdminOSWindows9x = 2,
+    COMAdminOSWindowsNT = 3,
+    COMAdminOSWindowsNTEnterprise = 4
+};
+
+enum COMAdminServiceOptions
+{
+    COMAdminServiceLoadBalanceRouter = 1
+};
+
+enum COMAdminServiceStatusOptions
+{
+    COMAdminServiceStopped = 0,
+    COMAdminServiceStartPending = 1,
+    COMAdminServiceStopPending = 2,
+    COMAdminServiceRunning = 3,
+    COMAdminServiceContinuePending = 4,
+    COMAdminServicePausePending = 5,
+    COMAdminServicePaused = 6,
+    COMAdminServiceUnknownState = 7
+};
+
+enum COMAdminFileFlags
+{
+    COMAdminFileFlagLoadable = 1,
+    COMAdminFileFlagCOM = 2,
+    COMAdminFileFlagContainsPS = 4,
+    COMAdminFileFlagContainsComp = 8,
+    COMAdminFileFlagContainsTLB = 16,
+    COMAdminFileFlagSelfReg = 32,
+    COMAdminFileFlagSelfUnReg = 64,
+    COMAdminFileFlagUnloadableDLL = 128,
+    COMAdminFileFlagDoesNotExist = 256,
+    COMAdminFileFlagAlreadyInstalled = 512,
+    COMAdminFileFlagBadTLB = 1024,
+    COMAdminFileFlagGetClassObjFailed = 2048,
+    COMAdminFileFlagClassNotAvailable = 4096,
+    COMAdminFileFlagRegistrar = 8192,
+    COMAdminFileFlagNoRegistrar = 16384,
+    COMAdminFileFlagDLLRegsvrFailed = 32768,
+    COMAdminFileFlagRegTLBFailed = 65536,
+    COMAdminFileFlagRegistrarFailed = 131072,
+    COMAdminFileFlagError = 262144
+};
+
+enum COMAdminComponentFlags
+{
+    COMAdminCompFlagTypeInfoFound = 1,
+    COMAdminCompFlagCOMPlusPropertiesFound = 2,
+    COMAdminCompFlagProxyFound = 4,
+    COMAdminCompFlagInterfacesFound = 8,
+    COMAdminCompFlagAlreadyInstalled = 16,
+    COMAdminCompFlagNotInApplication = 32
+};
+
+enum COMAdminErrorCodes
+{
+    COMAdminErrObjectErrors = -2146368511,
+    COMAdminErrObjectInvalid = -2146368510,
+    COMAdminErrKeyMissing = -2146368509,
+    COMAdminErrAlreadyInstalled = -2146368508,
+    COMAdminErrAppFileWriteFail = -2146368505,
+    COMAdminErrAppFileReadFail = -2146368504,
+    COMAdminErrAppFileVersion = -2146368503,
+    COMAdminErrBadPath = -2146368502,
+    COMAdminErrApplicationExists = -2146368501,
+    COMAdminErrRoleExists = -2146368500,
+    COMAdminErrCantCopyFile = -2146368499,
+    COMAdminErrNoUser = -2146368497,
+    COMAdminErrInvalidUserids = -2146368496,
+    COMAdminErrNoRegistryCLSID = -2146368495,
+    COMAdminErrBadRegistryProgID = -2146368494,
+    COMAdminErrAuthenticationLevel = -2146368493,
+    COMAdminErrUserPasswdNotValid = -2146368492,
+    COMAdminErrCLSIDOrIIDMismatch = -2146368488,
+    COMAdminErrRemoteInterface = -2146368487,
+    COMAdminErrDllRegisterServer = -2146368486,
+    COMAdminErrNoServerShare = -2146368485,
+    COMAdminErrDllLoadFailed = -2146368483,
+    COMAdminErrBadRegistryLibID = -2146368482,
+    COMAdminErrAppDirNotFound = -2146368481,
+    COMAdminErrRegistrarFailed = -2146368477,
+    COMAdminErrCompFileDoesNotExist = -2146368476,
+    COMAdminErrCompFileLoadDLLFail = -2146368475,
+    COMAdminErrCompFileGetClassObj = -2146368474,
+    COMAdminErrCompFileClassNotAvail = -2146368473,
+    COMAdminErrCompFileBadTLB = -2146368472,
+    COMAdminErrCompFileNotInstallable = -2146368471,
+    COMAdminErrNotChangeable = -2146368470,
+    COMAdminErrNotDeletable = -2146368469,
+    COMAdminErrSession = -2146368468,
+    COMAdminErrCompMoveLocked = -2146368467,
+    COMAdminErrCompMoveBadDest = -2146368466,
+    COMAdminErrRegisterTLB = -2146368464,
+    COMAdminErrSystemApp = -2146368461,
+    COMAdminErrCompFileNoRegistrar = -2146368460,
+    COMAdminErrCoReqCompInstalled = -2146368459,
+    COMAdminErrServiceNotInstalled = -2146368458,
+    COMAdminErrPropertySaveFailed = -2146368457,
+    COMAdminErrObjectExists = -2146368456,
+    COMAdminErrRegFileCorrupt = -2146368453,
+    COMAdminErrPropertyOverflow = -2146368452,
+    COMAdminErrNotInRegistry = -2146368450,
+    COMAdminErrObjectNotPoolable = -2146368449,
+    COMAdminErrApplidMatchesClsid = -2146368442,
+    COMAdminErrRoleDoesNotExist = -2146368441,
+    COMAdminErrStartAppNeedsComponents = -2146368440,
+    COMAdminErrRequiresDifferentPlatform = -2146368439,
+    COMAdminErrQueuingServiceNotAvailable = -2146367998,
+    COMAdminErrObjectParentMissing = -2146367480,
+    COMAdminErrObjectDoesNotExist = -2146367479,
+    COMAdminErrCanNotExportAppProxy = -2146368438,
+    COMAdminErrCanNotStartApp = -2146368437,
+    COMAdminErrCanNotExportSystemApp = -2146368436,
+    COMAdminErrCanNotSubscribeToComponent = -2146368435
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "Comadmin.tli"
+
+} // namespace ComAdminLib
+
+#pragma pack(pop)

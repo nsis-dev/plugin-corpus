@@ -1,0 +1,591 @@
+{
+ "AccessControl_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4a/AccessControl.zip"
+ ],
+ "Aero_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/84/Aero.zip"
+ ],
+ "Animate_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7b/Animate.zip"
+ ],
+ "AnimGif_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1a/AnimGif.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/9/9d/AnimGifPe.zip"
+ ],
+ "Application_Association_Registration_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d4/AppAssocReg-0.4.zip"
+ ],
+ "ApplicationID_plug-in": [
+  "http://mjpa.co.uk/download/applicationid-dll.zip",
+  "http://mjpa.co.uk/download/applicationid.zip",
+  "https://github.com/connectiblutz/NSIS-ApplicationID/releases/download/1.1/NSIS-ApplicationID.zip"
+ ],
+ "Arrays_in_NSIS": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/44/NSISArray.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/4/4e/NSISList-Plugin.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/7/78/Stack.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/9/97/NsArray.zip",
+  "http://myweb.tiscali.co.uk/imker/downloads/Array.zip"
+ ],
+ "Assert": [],
+ "Base64_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fd/Base64.zip"
+ ],
+ "BaseConvert_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c3/BaseConervt.zip"
+ ],
+ "BattleTorrent_plug-ins": [
+  "http://prdownloads.sourceforge.net/battletorrent/BattleTorrent-0.0.zip?download"
+ ],
+ "BDEAlias_plug-in": [],
+ "BgWorker_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/62/BgWorker.zip"
+ ],
+ "Blowfish_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c0/Blowfish.zip"
+ ],
+ "Blowfish%2B%2B_plug-in": [
+  "https://nsis.sourceforge.io/File:Blowfish%2B%2B.zip",
+  "https://nsis.sourceforge.io/File:BlowfishDLL.7z"
+ ],
+ "BrandingURL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/76/BrandingURL.zip"
+ ],
+ "ButtonEvent_plug-in": [
+  "https://nsis.sourceforge.io/File:ButtonEvent.zip"
+ ],
+ "CabDLL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/aa/Cabdll.zip"
+ ],
+ "CABSetup_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/ce/CABSetup.zip"
+ ],
+ "CabX_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c7/CabX.zip"
+ ],
+ "Call_.NET_DLL_methods_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/9c/CLR.zip",
+  "http://taralex.us/CLR.rar"
+ ],
+ "CallAnsiPlugin_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/73/CallAnsiPlugin_0.2.zip"
+ ],
+ "CDRom_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/50/Cdrom.zip"
+ ],
+ "ChangeRes_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/8e/ChangeRes.zip"
+ ],
+ "ComPlusAdmin_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3f/ComPlusAdmin-2.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/6/6d/ComPlusAdminEX.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/7/70/ComPlusAdmin.zip"
+ ],
+ "CPUDesc_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/87/Cpudesc.zip"
+ ],
+ "CPUFeatures_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/a5/CPUFeatures.2013-02-26.zip"
+ ],
+ "CRCCheck_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fd/CRCCheck.zip",
+  "http://www.fdos.org/win32/nsis/plugins/others/CRCCheck.1.4.zip"
+ ],
+ "CreateMutex_plug-in": [],
+ "Crypto_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/cd/Crypto.zip"
+ ],
+ "CustomLicense_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/b/b3/CustomLicense.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/e/e5/NsRichEdit.zip"
+ ],
+ "DcryptDll_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/01/DcryptDll.zip",
+  "https://github.com/swallowdir/nsis-dcrypt/releases/download/v1.0/DcryptDll.zip"
+ ],
+ "Debug_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/56/Debug_plug-in.zip"
+ ],
+ "Dialer_plug-in": [],
+ "Dialogs_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/75/Dialogs.zip"
+ ],
+ "Dirpage_plug-in": [
+  "http://saivert.com/nsis/dirpage.7z"
+ ],
+ "DlgHost_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/2f/DlgHostPlugin.zip"
+ ],
+ "DotNet_plug-in": [],
+ "DotNetChecker_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/8d/NSISDotNetChecker-Unicode.zip"
+ ],
+ "DumpLog_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/38/DumpLog.zip"
+ ],
+ "DumpState_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4e/Dumpstate.zip"
+ ],
+ "EBanner_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/72/EBanner.zip"
+ ],
+ "Email_validation_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/eb/Email_validation.zip"
+ ],
+ "EmbeddedLists_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/6a/EmbeddedLists.zip"
+ ],
+ "EmbedHTML_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7c/EmbedHTML.zip"
+ ],
+ "EnumCDs_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/b/b0/EnumCDs.zip"
+ ],
+ "EnumINI_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/62/EnumINI.zip"
+ ],
+ "EnVar_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7f/EnVar_plugin.zip"
+ ],
+ "EventLog_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/02/EventLog.zip"
+ ],
+ "ExDlg_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7e/ExDlg.zip"
+ ],
+ "ExecCmd_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/2f/ExecCmd.zip"
+ ],
+ "ExecDos_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/0f/ExecDos.zip"
+ ],
+ "ExecPri_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4c/ExecPri.zip"
+ ],
+ "ExecTimeout_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3e/ExecTimeout.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/a/a0/ExecTimeout.Demo.zip"
+ ],
+ "ExLicensePage_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/48/ExLicensePage.zip",
+  "http://www.pkpsoft.com/other/ExLicensePage.zip"
+ ],
+ "ExtractDLL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/34/Extractdll.zip"
+ ],
+ "ExtractDLLEx_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/aa/Extractdllex.zip",
+  "http://www.lkcc.org/achim/download/extractdllex.zip"
+ ],
+ "FCT_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/9c/Fct.zip"
+ ],
+ "FindProcDLL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3c/FindProc.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/5/53/KillProcDll%26FindProcDll.zip"
+ ],
+ "Firewall-Disabler_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/34/Firewall-disabler-1.0.zip"
+ ],
+ "FloatOP_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/0e/Floatop.zip"
+ ],
+ "FontInfo_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c0/FontInfo.zip"
+ ],
+ "FontName_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/78/FontName-0.7.zip"
+ ],
+ "FreeArc_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/08/FreeArcPlugin.zip"
+ ],
+ "FSP_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/21/Fsp.zip"
+ ],
+ "Games_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/dd/NSISGames.zip",
+  "http://www.extensiblesoft.com/gamex/GameExplorerManager10beta6.zip"
+ ],
+ "GetFirstRemovableDrive_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/9a/GetFirstRemovable.zip"
+ ],
+ "GetVersion_(Windows)_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/8a/GetVersion.zip"
+ ],
+ "Graphical_Installer": [],
+ "HandleFileDragDrop_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/61/HandleFileDragDrop.zip"
+ ],
+ "HelpButton_plug-in": [
+  "http://www.darklogic.org/win32/nsis/plugins/others/helpbutton_v0_9.zip"
+ ],
+ "How_can_I_install_a_plugin%3F": [],
+ "HwInfo_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/f6/HwInfo.zip"
+ ],
+ "IEFunctions_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/f6/IEFunctions.zip"
+ ],
+ "InetBgDL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/97/InetBgDL.zip"
+ ],
+ "Inetc_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c9/Inetc.zip"
+ ],
+ "InetLoad_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/b/b4/InetLoad.zip"
+ ],
+ "InstallOptionsEx_plug-in": [],
+ "InstDrv_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3c/Instdrv.zip"
+ ],
+ "Internet_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d4/Internet.zip",
+  "http://www.loco.com/file.zip"
+ ],
+ "Invoke_Shell_Verb_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/b/bc/InvokeShellVerb-1.1.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/c/ca/InvokeShellVerb-1.0.zip"
+ ],
+ "IP_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/eb/Ipdll.zip"
+ ],
+ "IpConfig_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c1/IpConfig.zip"
+ ],
+ "KillProc_plug-in": [],
+ "KillProcDLL_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/12/KillProcDLL-bin.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/5/53/KillProcDll%26FindProcDll.zip"
+ ],
+ "Linker_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/39/Linker.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/5/55/Linker-1.2.zip",
+  "http://www.fdos.org/win32/nsis/plugins/others/Linker.1.1.zip"
+ ],
+ "LiteFirewall_Plugin": [],
+ "Locate_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/af/Locate.zip"
+ ],
+ "LockedList_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d3/LockedList.zip"
+ ],
+ "LogEx_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d1/LogEx.zip"
+ ],
+ "Marquee_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/13/Marquee.zip"
+ ],
+ "Math_plug-in": [],
+ "MD5_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d7/Md5dll.zip",
+  "http://www.fdos.org/win32/nsis/plugins/md5dll/md5dll.0.5.zip"
+ ],
+ "Metadl": [
+  "https://web.archive.org/web/2/http://hampus.vox.nu/metadl/files/metadl-1.1.0.zip"
+ ],
+ "MoreInfo_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3d/MoreInfo.zip",
+  "http://www.fdos.org/win32/nsis/plugins/others/MoreInfo.1.0.1.2.zip"
+ ],
+ "MSIBanner_plug-in": [],
+ "MSSQL_OLEDB_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4c/MSSQL_OLEDB.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/6/67/Mssql_oledb2.zip"
+ ],
+ "Name2ip_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/19/Name2ip.zip"
+ ],
+ "NewAdvSplash_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/cf/NewAdvSplash.zip"
+ ],
+ "NotifyIcon_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/85/NotifyIcon.zip"
+ ],
+ "NScurl_plug-in": [],
+ "NsExec_plug-in": [],
+ "NsExpr_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/14/NsExpr.zip"
+ ],
+ "NsFlash_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/ea/NsFlash.zip"
+ ],
+ "NSIS_plug-in_library": [
+  "http://www.solemnwarning.net/nsplugin/nsplugin-1.0.zip"
+ ],
+ "NSIS_Simple_Firewall_Plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/76/NSIS_Simple_Firewall_Plugin_ANSI_1.21.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/e/e0/NSIS_Simple_Firewall_Plugin_Unicode_1.21.zip"
+ ],
+ "NSIS_Simple_Service_Plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/24/NSIS_Simple_Service_Plugin_ANSI_1.30.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/e/ef/NSIS_Simple_Service_Plugin_Unicode_1.30.zip"
+ ],
+ "NSIS_SkinCrafter_Plugin_plug-in": [
+  "http://www.skincrafter.com/downloads/nsis_skincrafter_plugin.zip"
+ ],
+ "NSIS-Date_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/5d/Nsisdt.zip"
+ ],
+ "NSIS-OS_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/28/Nsisos.zip"
+ ],
+ "Nsis7z_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/11/Nsis7z_921.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/6/69/Nsis7z_19.00.7z",
+  "https://nsis.sourceforge.io/mediawiki/images/9/93/Nsis7z.zip"
+ ],
+ "NsisCrypt_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fb/NsisCrypt.zip"
+ ],
+ "Nsisdbg_plug-in": [
+  "http://saivert.com/nsis/NSIS-Debugger.7z",
+  "http://wayback.archive.org/web/*/http://saivert.com/nsis/NSIS-Debugger.7z",
+  "https://dl.dropbox.com/u/74708275/NSIS-Debugger.zip"
+ ],
+ "NsisDDE_plug-in": [],
+ "NSISDirEx_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3b/NSISDirEx.zip"
+ ],
+ "Builtin_NSISdl_plug-in": [],
+ "NSISdl_Smooth": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1e/NSISdlSmooth.zip"
+ ],
+ "NsisFile_plug-in": [],
+ "NsisFirewall_plug-in": [],
+ "NsisIIS_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/9f/NsisIIS.zip"
+ ],
+ "NSISInstEx_plug-in": [
+  "http://members.cox.net/willowufgood/NSISInstEx.zip"
+ ],
+ "NSISList_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4e/NSISList-Plugin.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/c/cf/NSISList-Unicode-plugin.zip"
+ ],
+ "NSISLog_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/76/Nsislog.zip"
+ ],
+ "NSISMultiMon_plug-in": [],
+ "NSISpcre_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/48/NSISpcre.zip"
+ ],
+ "NsisSlideshow_plug-in": [],
+ "NsisStartMenu_plug-in": [],
+ "Nsisunz_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1c/Nsisunz.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/5/5a/NSISunzU.zip"
+ ],
+ "NsisUrlLib_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/80/NsisUrlLib.zip"
+ ],
+ "NSISUser_plug-in": [],
+ "NSISVCLStyles_plug-in": [],
+ "NsisXML_plug-in_(by_Joel)": [],
+ "NsisXML_plug-in_(by_Wizou)": [],
+ "NsJavaLocator": [],
+ "NsJSON_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/f0/NsJSON.zip"
+ ],
+ "NsKeyHook_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/ae/NsKeyHook.zip"
+ ],
+ "NsMCI_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1b/NsMCI.zip"
+ ],
+ "NsODBC_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/d/d0/NsODBC-unicode.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/e/e7/NsODBC.zip"
+ ],
+ "NsODBCext_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fc/NsODBCext.zip"
+ ],
+ "NsProcess_plugin": [
+  "http://nsis.sourceforge.net/mediawiki/images/archive/1/18/20140806212030!NsProcess.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/1/18/NsProcess.zip"
+ ],
+ "NsPython_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1a/NSIS-Python25.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/8/86/NSIS-Python26.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/c/c2/NSIS-Python27.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/e/ef/NSIS-Python.zip"
+ ],
+ "NsRandom_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/59/NsRandom.zip"
+ ],
+ "NsResize_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/0f/NsResize.zip"
+ ],
+ "NsRestartExplorer_plug-in": [],
+ "NsRichEdit_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/e5/NsRichEdit.zip"
+ ],
+ "NsSCM_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7e/NsSCM.zip"
+ ],
+ "NsScreenshot_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1e/NsScreenshot.zip"
+ ],
+ "NsThread_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/25/NsThread.zip"
+ ],
+ "NsUnzip_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/88/NsUnzip.zip"
+ ],
+ "NsVersionInfo_plugin": [
+  "http://sebastien.kirche.free.fr/powerbuilder/libverinfo.zip"
+ ],
+ "NsWeb_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/87/Nsweb.zip"
+ ],
+ "NsXML_plug-in_(by_rsegal)": [],
+ "Nwiz_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/ee/Nwizplugin.zip"
+ ],
+ "Nxs_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/e6/Nxs.zip"
+ ],
+ "NxSMSILoaderDlg_plug-in": [
+  "http://saivert.com/nsis/NxS%20MSI%20LoaderDlg.7z"
+ ],
+ "PassDialog_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/45/PassDialog.zip"
+ ],
+ "PathLib": [],
+ "Perl_plugin": [
+  "http://nsis.sourceforge.net/mediawiki/images/f/fc/Perl58.dll_%28strawberry-perl-5.8.8.2%29.zip"
+ ],
+ "PixelShaderCheck": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1a/Pixelshader.zip"
+ ],
+ "PopupListBox_plug-in": [
+  "https://nsis.sourceforge.io/File:PopupListBox.zip"
+ ],
+ "Processes_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/68/Processes-x64fix.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/f/f3/Processes.zip",
+  "http://devel.icode.ro/files/processes.zip",
+  "http://dl.dropbox.com/u/18386244/Processes-x64fix.zip",
+  "http://download.inscape3d.com/share/nsis/Processes-Unicode.7z"
+ ],
+ "ProxySettings": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/86/ProxySettings.zip"
+ ],
+ "PS_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/cf/PS.zip"
+ ],
+ "Pwgen_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/9/93/Pwgen-001.zip"
+ ],
+ "RealProgress_plug-in": [
+  "https://nsis.sourceforge.io/File:RealProgress.zip"
+ ],
+ "RegBin_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/13/RegBin.zip"
+ ],
+ "Registration_plug-in": [],
+ "Registry_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/47/Registry.zip"
+ ],
+ "ScrollLicense_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fe/ScrollLicense.zip"
+ ],
+ "SelfDel_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/08/SelfDel.zip"
+ ],
+ "Services_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/51/Services.zip",
+  "https://nsis.sourceforge.io/File:Services.zip"
+ ],
+ "SetCursor_plug-in": [
+  "https://nsis.sourceforge.io/File:SetCursor.zip"
+ ],
+ "SFhelper_Plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fb/Sfhelper.zip"
+ ],
+ "ShellExecAsUser_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/1d/ShellExecAsUserUnicodeUpdate.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/6/68/ShellExecAsUser_amd64-Unicode.7z",
+  "https://nsis.sourceforge.io/mediawiki/images/c/c7/ShellExecAsUser.zip"
+ ],
+ "ShellLink_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/6c/Shelllink.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/c/cb/Shelllnk.zip"
+ ],
+ "ShutDown_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/f9/ShutDown.zip"
+ ],
+ "ShutdownAllow_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/35/ShutdownAllow.zip"
+ ],
+ "SimpleBg_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/38/SimpleBg_plugin.zip"
+ ],
+ "SkinnedButton_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/7c/SkinnedButton-v1.2.zip"
+ ],
+ "SkinnedControls_plug-in": [],
+ "SpiderBanner_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/4c/SpiderBanner_plugin.zip"
+ ],
+ "Stack_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/7/78/Stack.zip"
+ ],
+ "StdUtils_plug-in": [],
+ "StrLib": [],
+ "SysRestore_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/c1/SysRestore.zip"
+ ],
+ "System_plug-in": [],
+ "TAPIhelp_plug-in": [
+  "http://www.cherubicsoft.com/_media/nsis/tapihelp.zip"
+ ],
+ "TaskbarProgress_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/6/6f/Win7TaskbarProgress_20091109.zip"
+ ],
+ "TCP_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/c/cc/NSIS_TCP_Plugin_Unicode_x86.zip",
+  "http://www.rejment.com/TCP.zip"
+ ],
+ "TextReplace_plugin": [
+  "https://nsis.sourceforge.io/mediawiki/images/e/eb/Textreplace.zip"
+ ],
+ "ThreadTimer_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/5/59/ThreadTimer_v1.1.1.7z",
+  "https://nsis.sourceforge.io/mediawiki/images/c/c6/ThreadTimer.zip"
+ ],
+ "Time_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/aa/Time.zip"
+ ],
+ "TitlebarProgress_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/f/fc/TitlebarProgress.zip"
+ ],
+ "ToggleInstFiles_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/2/22/ToggleInstFiles.zip"
+ ],
+ "ToolTips_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/4/40/Tooltips.zip"
+ ],
+ "UAC_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/8/8f/UAC.zip"
+ ],
+ "Unicode_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/3/3d/Unicode_V1.2.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/5/55/Unicode_V1.1.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/8/86/Unicode.zip"
+ ],
+ "UnicodePathTest_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/a/a7/UnicodePathTest_1.0.zip"
+ ],
+ "UnTGZ_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/1/13/Untbgz.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/9/9d/Untgz.zip",
+  "http://www.fdos.org/win32/nsis/plugins/untgz.1.0.10.zip",
+  "http://www.fdos.org/win32/nsis/plugins/untgz.1.0.18.zip"
+ ],
+ "UserMgr_plug-in": [
+  "https://nsis.sourceforge.io/mediawiki/images/0/08/UserMgr.zip",
+  "https://nsis.sourceforge.io/mediawiki/images/4/4a/UserMgr_%282021%29.zip",
+  "http://www.meinberg.de/download/utils/UserMgr.zip"
+ ]
+}

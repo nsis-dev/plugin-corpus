@@ -1,0 +1,3 @@
+20 Jan 2006 - Carl Waldbieser - BUGFIX: RemoveComponent was popping up a message box which was bad for silent installs.  Also, it was removing classes from front to back, but had the unfortunate side-effect of altering the indexes while looping through them.  I changed the order to back-to-front, and this has corrected the problem.  I also added some message boxes when the plugin is compiled in debug mode.
+
+20 Jan 2006 - Carl Waldbieser - Made the match against a COM+ package name case-insensitive.

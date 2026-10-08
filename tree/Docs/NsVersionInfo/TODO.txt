@@ -1,0 +1,88 @@
+TODO : 
+
+Hi - still a great article.
+ 
+I have a new problem. I already change the 'OriginalFilename' and 'ProductName' but now I want to change the Language ID in the existing 'VarFileInfo\Translation' section and the 'StringFileInfo' area of a resource-only DLL.
+ 
+Basically, we have a resource-only DLL with a language ID = 0x0409 (English US), CodePage = 1200 (Unicode - 0x04b0). We use PO files and TortoiseSVN's ResText program to update it with a different language's strings. However, the 'StringFileInfo' and the 'VarFileInfo\Translation' still have '0x0409, 0x04b0'.
+ 
+I then run a program using your code to set the 'OriginalFilename' based on the new language DLL and update the 'ProductName' to have the language in the text.
+ 
+However, when looking at the properties of the DLL with Windows Explorer, it still says that the language is 'English (US)'. If I use a Hex Editor to change the values in the 'StringFileInfo' and the 'VarFileInfo\Translation' from 0x0409 to, say 0x0407, then it says the language is German.
+ 
+It is this that I want to be able to do using your code.
+ 
+Many thanks in advance.
+ 
+David
+
+
+Re: Change Language
+	-273C	6:49 18 Mar '11  
+	
+I mananged to resolve this myself - as follows:
+ 
+Firstly, I added a new function to VersionInfo.h to obtain the languageID after the information has been read from a file. I also added an extra parameter to the 'ToFile' routine to specify if we are replacing the version information. This parameter is passed on unchanged to the 'UpdateModuleResource' routine.
+ 
+Changes to: VersionInfo.h
+WORD GetLangID() const {return m_wLangId;}
+ 
+BOOL ToFile(const CString& strModulePath = "", LPCTSTR lpszResourceId = NULL /*Auto*/,
+            WORD wLangId = 0xFFFF /*Auto*/, const bool bReplace = false);
+ 
+BOOL UpdateModuleResource(const CString &strFilePath, LPCTSTR lpszResourceId, WORD wLangId,
+                          LPVOID lpData, DWORD dwDataLength, const bool bReplace = false);
+ 
+The if the new bReplace parameter is true, then the UpdateModuleResource routine deletes the existing version information before adding the new one.
+ 
+Changes to: VersionInfo.cpp
+BOOL CVersionInfo::UpdateModuleResource(const CString &strFilePath, LPCTSTR lpszResourceId,
+                                        WORD wLangId, LPVOID lpData, DWORD dwDataLength,
+                                        const bool bReplace)
+{
+  HANDLE hUpdate = ::BeginUpdateResource(strFilePath, FALSE);
+ 
+  if (hUpdate == NULL)
+    return FALSE;
+ 
+  BOOL bUpdateResult = TRUE;
+ 
+  // If we need to replace the language - delete original first
+  if (bReplace)
+    bUpdateResult = UpdateResource(hUpdate, RT_VERSION, lpszResourceId, m_wLangId, NULL, 0);
+ 
+  // Update or add new version information
+  if (bUpdateResult)
+    bUpdateResult = UpdateResource(hUpdate, RT_VERSION, lpszResourceId, wLangId, lpData, dwDataLength);
+ 
+  return EndUpdateResource(hUpdate, FALSE) && bUpdateResult;
+}
+ 
+My program now has:
+ 
+....
+  // Get version information from resource-only DLL
+  CVersionInfo vi(filename);
+ 
+  // Change any information e.h. version or ProductName
+  .....
+ 
+  // Get StringFileInfo section
+  CStringFileInfo &stringFileInfo = vi.GetStringFileInfo();
+ 
+  // CodePage = 0x04b0 = 1200 = Unicode
+  CString strOldLangID, strNewLangID, strCodePage(_T("04b0"));
+ 
+  // Get new language ID
+  strNewLangID.Format(_T("%04x"), wNewLangID);
+ 
+  // Get language ID from read in version information
+  WORD wOldLangID = vi.GetLangID();
+  strOldLangID.Format(_T("%04x"), wOldLangID);
+ 
+  // Change the language key
+  stringFileInfo.SetStringTableKey(strOldLangID + strCodePage, strNewLangID + strCodePage);
+ 
+  // Replace the version information under the old language ID to be under the new language ID
+  vi.ToFile(_T(""), NULL, wNewLangID, true);
+ 

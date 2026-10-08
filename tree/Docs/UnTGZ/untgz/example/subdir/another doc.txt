@@ -1,0 +1,1 @@
+another dummy doc in example\subdir subdirectory

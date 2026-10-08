@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NSISGames", "GamesDllSrc\GamesDll.vcproj", "{770A7EB5-84A4-4E8D-98EB-A22E93423C2D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MCEWrapper", "MCEWrapperSrc\MCEWrapper.vcproj", "{6DDAE97D-9FF4-4323-9F90-E3DD98FA3187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{770A7EB5-84A4-4E8D-98EB-A22E93423C2D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{770A7EB5-84A4-4E8D-98EB-A22E93423C2D}.Debug|Win32.Build.0 = Debug|Win32
+		{770A7EB5-84A4-4E8D-98EB-A22E93423C2D}.Release|Win32.ActiveCfg = Release|Win32
+		{770A7EB5-84A4-4E8D-98EB-A22E93423C2D}.Release|Win32.Build.0 = Release|Win32
+		{6DDAE97D-9FF4-4323-9F90-E3DD98FA3187}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6DDAE97D-9FF4-4323-9F90-E3DD98FA3187}.Debug|Win32.Build.0 = Debug|Win32
+		{6DDAE97D-9FF4-4323-9F90-E3DD98FA3187}.Release|Win32.ActiveCfg = Release|Win32
+		{6DDAE97D-9FF4-4323-9F90-E3DD98FA3187}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

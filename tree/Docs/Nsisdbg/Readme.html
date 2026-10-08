@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<title>NSIS Debugger</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style type="text/css">
+
+body
+	{
+	padding: 10px;
+	background-color: #F0F0F0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+	}
+
+p
+	{
+	font-size: 10pt;
+	}
+
+center
+	{
+	text-align: center;
+	}
+
+table
+	{
+	margin: auto;
+	text-align: left;
+	background-color: #FFFFFF;
+	}
+
+.maintable
+	{
+	border: 2px solid #376EAB;
+	}
+
+.margin
+	{
+	margin: 20px;
+	}
+
+.text
+	{
+	margin: 20px;
+	}
+
+.bold
+	{
+	font-weight: bold;
+	}
+	
+.italic
+	{
+	font-style: italic;
+	}
+
+.bigheader
+	{
+	margin: 10px;
+	font-size: 24pt;
+	color: #333333;
+	text-align: center;
+	}
+
+.header
+	{
+	font-size: 14pt;
+	color: #7A7272;
+	}
+	
+.subheader
+	{
+	margin: 20px;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #303030;
+	}
+
+.footer
+	{
+    margin: 5px 5px 5px 5px;
+    text-align: right;
+    font-size: 8pt;
+	color: #909090;
+	}
+	
+a:link, a:visited, a:active
+	{
+	color: #294F75;
+	text-decoration: none;
+	}
+	
+a:hover
+	{
+	color: #182634;
+	text-decoration: underline;
+	}
+
+.subtable
+	{
+	margin: 20px;
+	border: 0px;
+	}
+
+.lefttable
+	{
+	background-color: #CCCCCC;
+	vertical-align: top;
+	}
+	
+.righttable
+	{
+	background-color: #EEEEEE;
+	vertical-align: top;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+<div class="center">
+<table width="750" class="maintable" cellspacing="0" cellpadding="0">
+<tr><td>
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <td><p class="bigheader"><img src="nsisdebuglogo.png" height="46" width="400" alt="NSIS Debugger"></p></td>
+</tr>
+
+<tr>
+ <td><div class="margin">
+<p class="header">Introduction</p>
+<p class="text">NSIS Debugger is a NSIS plugin which allows you to debug
+your NSIS installers. The plugin will create a dialog which will be displayed
+alongside the NSIS window. The first thing you will get familiar with is the tabbed pages.
+Use them to switch between variable list, stack view, debug log, config. and about page.</p>
+<p class="text">Using the variable list which is on the first tab page
+you can change all the variables, clear them, keep (save for later use) and restore them
+(from a previous keep operation). To edit a variable simply use the in-place edit box by clicking a variable.</p>
+<p class="text">The stack view gives you a list of the strings pushed on the stack. You can pop them off it,
+push more strings to it and clear the entire stack. You can edit a stack item simply by clicking it and use
+the in-place editbox.</p>
+<p class="text">NSIS Debugger has a debug log which you can add entries to by calling a function
+in your installer script.</p>
+<p class="text">
+To install the plugin, simply copy it to the plugins folder under your NSIS folder.
+</p>
+<p class="text">This version of NSIS Debugger has only been tested with NSIS 2.
+It should work perfectly fine with older versions too.</p>
+<hr />
+<p class="header">How to use</p>
+<p class="subheader">Initialization</p>
+<p class="text">The first thing you have to do to use the debugger is to
+set up a couple of lines in the .onGUIInit callback function in the script.
+You will also need to put a line in the .onGUIEnd callback function as well
+(this is covered below).</p>
+<pre class="margin">
+Function .onGUIInit
+
+  InitPluginsDir
+  ; Remember to include the "/NOUNLOAD" option.
+  ; This is to keep the debugger running.
+  nsisdbg::init /NOUNLOAD  
+  ; To start the debugger hidden pass "hidded"
+  ; to the stack like this:
+  ;   nsisdbg::init /NOUNLOAD "hidden"
+  ; You will be able to show it again by using the
+  ; system menu of the installer. Read about this below.
+
+  ; old fashion way (pre-2.0)
+  ;   GetTempFileName $9 ; $9 will globally be used in the script
+  ;   File /oname=$9 ${NSISDIR}\Plugins\nsisdbg.dll
+  ;   CallInstDLL $9 /NOUNLOAD init
+
+  ; optionally set a few option by calling setoption
+  nsisdbg::setoption /NOUNLOAD "notifymsgs" "1"
+  ; read more about the setoption function below
+FunctionEnd
+</pre>
+<p class="subheader">Use the debug log</p>
+<p class="text">Now as you have the debugger up and running, let's use the debug log feature.
+Call sendtolog like in this example</p>
+<pre class="margin">
+  nsisdbg::sendtolog /NOUNLOAD "Value of $$1 is $1"
+  ; Only push one string. Subsequent strings will be left on the stack.
+
+  ; old fashion way (pre-2.0)
+  Push "Value of $$1 is $1"
+  CallInstDLL $9 /NOUNLOAD sendtolog
+</pre>
+<p class="subheader">Setting options</p>
+<p class="text">To set an option in the debugger from script, call
+the setoption function with two strings pushed on stack.
+The first string is state of the option, and the second is the option name.</p>
+<table class="subtable">
+  <tr>
+    <td class="lefttable">updateinterval</td>
+    <td class="righttable">Push {seconds} to wait between updates.
+    Push "0" (nil seconds) to prevent automatic updates (the default behaviour).</td></td>
+  </tr>
+  <tr>
+    <td class="lefttable">showctrlids</td>
+    <td class="righttable">Push "1" to show a tooltip window that moves around with the cursor,
+    informing you about control ids of the controls in the installer dialog.
+    Push "0" or nothing at all to disable this feature.</td>
+  </tr>
+  <tr>
+    <td class="lefttable">notifymsgs</td>
+    <td class="righttable">Push "1" to make the debugger display a message box when
+    the installer notifies about page changes such as
+    <i>WM_NOTIFY_OUTER_NEXT</i> and <i>WM_NOTIFY_CUSTOM_READY</i>.</td>
+  </tr>
+  <tr>
+    <td class="lefttable">opacity</td>
+    <td class="righttable">Push {0-255} to stack which sets the transparency level
+    of installer dialog. This requires Windows 2000 or Windows XP.</td>
+  </tr>
+</table>
+<p class="text">
+  In all cases the debugger will leave "invalid state" on top of the stack
+  if the state (or param if you like) was not a number or invalid.</p>
+<p class="text">Check out this example:</p>
+<pre class="margin">
+  ; Set interval of automatic update to seven seconds
+  nsisdbg::setoption /NOUNLOAD "updateinterval" "7"
+  Pop $0
+  StrCmp $0 "" ok
+    MessageBox MB_OK $0 ; print error message if there was one
+  ok:
+  
+  ; old fashion way (pre-2.0)
+  Push "7"
+  Push "updateinterval"
+  CallInstDLL $9 /NOUNLOAD setoption
+</pre>
+<p class="subheader">The end</p>
+<p class="text">The debugger is running in it's own thread during the execution
+of the installer. When the installer quits, we need to properly shutdown the debugger.<br />
+This is done by calling the shutdown function without <i>/NOUNLOAD</i> option.</p>
+<p class="text">Set up .onGUIEnd callback:</p>
+<pre class="margin">
+Function .onGUIEnd
+  ; 10 four... over and out...
+  nsisdbg::shutdown
+
+  ; old fashion way (pre-2.0)
+  ;   CallInstDLL $9 shutdown
+  ;   Delete "$9"
+FunctionEnd
+</pre>
+<p class="subheader">System menu item</p>
+<p class="text">When you close the debugger dialog, the dialog isn't destroyed.
+It is just hidden. To bring it up again access the system menu of the installer
+by right-clicking the titlebar of the NSIS installer dialog. Here you will find
+an item called "Show debugger".
+</p>
+
+<p class="subheader">Summary</p>
+<p class="text">The NSIS Debugger DLL has four functions:</p>
+<ul>
+<li>init - Creates the debugger and puts an item in the system menu of the installer</li>
+<li>sendtolog - Adds a string to the log (timestamp is prepended)</li>
+<li>setoption - Sets various debugger options from script</li>
+<li>shutdown - Destroys the debugger</li>
+</ul>
+<p class="subheader">Return value</p>
+<p class="text">After you have called the DLL, NSIS Debugger
+adds one value to the stack in certain situations:</p>
+<ul>
+<li>"invalid option" - An invalid option string was used with <b>setoption</b></li>
+<li>"OK" - <b>init</b> completed successfully</li>
+</ul>
+<p class="text">Usually, you don't need to check this value,
+but you still have to remove it from the stack to keep things clean.</p>
+<hr />
+<p class="header">Contact</p>
+<table class="subtable">
+  <tr><td class="lefttable">Homepage</td><td class="righttable">
+  <a href="http://members.tripod.com/files_saivert/">http://files_saivert.tripod.com/</a>
+  </td></tr>
+  <tr><td class="lefttable">E-Mail</td><td class="righttable">
+  <a href="mailto:saivert%40email%2Ecom">saivert AT email DOT com</a>
+  </td></tr>
+</table>
+<p class="header">Version history</p>
+<ul>
+<li>version 1.0 (12/20/2003)
+  <ul>
+    <li>first release</li>
+    <li>still have to work on the "show control ids" thingy...</li>
+  </ul>
+<li>Version -0.666 prealpha-debug-custom-x
+  <ul>
+    <li>Internal</li>
+    <li>having trouble with the "show control ids" thingy...</li>
+  </ul>
+</li>
+</ul>
+<p class="header">Credits</p>
+<p class="text">Based on code in another NSIS plugin called
+DumpState written by Andrew Francis.<br /> His homepage is
+<a href="http://www.sullust.net/">http://www.sullust.net/</a><br />
+Readme HTML page design based on Modern User Interface readme by Joost Verburg.
+<p class="header">License</p>
+<pre class="margin">
+Portions Copyright &copy; 2002-2003:
+
+This software is provided 'as-is', without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute
+it freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; 
+   you must not claim that you wrote the original software.
+   If you use this software in a product, an acknowledgment in the
+   product documentation would be appreciated but is not required.
+2. Altered versions must be plainly marked as such,
+   and must not be misrepresented as being the original software.
+3. This notice may not be removed or altered from any distribution.
+</pre>
+  </div></td>
+  </tr>
+</table>
+</td></tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[exdll.dsp]
+SCC_Aux_Path = "C:\Program Files\Microsoft Visual Studio\VSS"
+SCC_Project_Name = "$/FO3/Code/Lib/InstallerPlugins/ExDLL", ODFAAAAA
+
+[exdll.dsw]
+SCC_Aux_Path = "C:\Program Files\Microsoft Visual Studio\VSS"
+SCC_Project_Name = "$/FO3/Code/Lib/InstallerPlugins/ExDLL", ODFAAAAA

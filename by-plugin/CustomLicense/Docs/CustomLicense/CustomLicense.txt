@@ -1,0 +1,53 @@
+CustomLicense Plug-in For NSIS
+
+2006, 2010-2011 MouseHelmet Software
+
+Written by Jason Ross aka JasonFriday13 on the forums.
+
+Requires NSIS 2.42, uses new plugin api's.
+Unicode version included.
+
+Introduction
+~~~~~~~~~~~~
+
+This plugin was born out of necessity. It was purly for the
+license page in the InstallSpiderUI (also written by me). Now
+I have released it as a plugin to the public. It loads a file
+into memory, then it sets the desired control with the same text.
+Supposed to be used with InstallOptions, but can be used for
+anything requiring a lot of text.
+
+Functions (actually, there is only one function).
+~~~~~~~~~
+
+CustomLicense::LoadFile "AbsolutePathToFile.txt" "HWNDofControl"
+
+This loads the contents of the file into a dynamically created
+buffer (Don't know the max file size, but I tested it with a
+483KB .txt file and it handled it just nicely). Extract the file 
+to the plugins dir first, then call this function. If your file 
+is in the plugins dir, pass it as: "$PLUGINSDIR\TextFile.txt" 
+(with quotes). This can be called with or without the /NOUNLOAD 
+switch (I recommend without). The return value is an integer. 
+0 indicates success, anything else is an error.
+
+If you are using InstallOptions with this plugin, I
+recommend using it this way (example):
+
+Function CustomPagePre
+  
+  InstallOptions::InitDialog "$PLUGINSDIR\YourINIFile.ini"
+  ; For MUI users:
+  ; !insertmacro MUI_INSTALLOPTIONS_INITDIALOG "YourFile.ini"
+  ; InstallSpiderUI already uses this plugin for its license page.
+
+  Pop $0
+  ; Read the installoptions help on getting the field number.
+  GetDlgItem $1 $0 "1200" 
+  
+  CustomLicense::LoadFile "$PLUGINSDIR\mylicense.txt" "$1"
+
+  InstallOptions::show
+  ; !insertmacro MUI_INSTALLOPTIONS_SHOW
+
+FunctionEnd
