@@ -459,6 +459,7 @@
   v2.3 - 7th February 2011
   * Added /ignorebtn [button_id] switch to specify a new Ignore button.
     This button can be added to the UI using Resource Hacker
+    // Alternative: Resource Cracker https://www.pelock.com/products/resource-cracker
     (recommended) or at run time using the System plug-in.
   * /autonext now also applies when all open programs have been closed
     while the dialog is visible.
